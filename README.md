@@ -1,34 +1,23 @@
 # React Native Developer Test (Estágio)
 
-Parabéns por chegar até esta fase do processo seletivo para Desenvolvedor React Native.
-
-Aqui na Ploomes valorizamos muito uma qualidade: autonomia. Isso quer dizer que, uma vez que um problema é apresentado para um dos nossos colaboradores, cabe a este decidir qual a melhor solução. 
-
-Por isso,em nosso desafio, nos vamos setar alguns critérios mínimos para a aplicação e deixar você tomar as decisões mais profundas sobre a aplicação.
-
-Remember to do your best and have fun!
-# Critérios mínimos:
-
-- Consumir dados de alguma [API](https://github.com/Ploomes/JrReactNativeSkillTest/blob/master/README.md#sugestões-de-apis);
-- Utilizar de ao menos um componente reutilizável(genérico);
-- [Clean Code](https://becode.com.br/clean-code/);
-# Diferenciais:
-
-- Utilizar [Redux](https://redux.js.org/basics/usage-with-react/) para gerenciamento de estado;
-- Possibilidade de utilização Online/Offline com algum tipo de persistência de dados Offline;
-- TypeScript;
-- Layout FODA!;
-- Comentários;
-
-# Entrega
-
-Para a entrega, clonar esse repositório e indicar QUAL O PROBLEMA QUE A SUA APLICAÇÃO SE PROPÕE A RESOLVER;
-Incluir também instruções de execução, limitações, bugs conhecidos e quais seriam os próximos passos para a evolução do sistema.
-
-# Sugestões de APIs:
-
-As APIs listadas aqui são apenas sugestões, caso queira utilizar de outro serviço, fique a vontade, mas tenha em mente que teremos que executar seu código aqui e sermos capazes de ver essa conexão:
-- [GetAsteroids](https://rapidapi.com/dimas/api/NasaAPI?endpoint=apiendpoint_b4e69440-f966-11e7-809f-87f99bda0814getAsteroids)
-- [PokeAPI](https://pokeapi.co)
-- [MarvelCommicsAPI](https://rapidapi.com/stefan.skliarov/api/Marvel?endpoint=apiendpoint_011a2d90-f967-11e7-847f-a7b04b853fafgetComicsBySeries)
-- [OpenWeatherMap](https://openweathermap.org/price)
+# Problema que a aplicação se propõe a resolver:
+    Criar uma fonte de acesso a informações de pokemons, tais como nome, aparência e alguma breve descrição de comportamento ou história (chamado de flavor text).
+# Instruções de execução:
+    (para o desenvolvimento utilizei o Android Studio, não consegui checar se existe algum erro na versão de IOS)
+    Para inicializar o projeto, abra 2 terminais na pasta 'MyApp' desse repositório.
+    No primeiro terminal, execute 'npm install' para instalar as dependencias do projeto.
+    A seguir, ainda nesse terminal, execute o comando 'npx react-native start' e nesse terminal rodará o Metro.
+    No segundo terminal, execute o comando 'npx react-native run-android' e espere executar o arquivo no emulador ou dispositivo.
+# Limitações: 
+    A pokedex só recupera a informação dos primeiros 151 pokemons existentes.
+    Alguns sprites de pokemons grandes ficam com pontas cortadas no layout do sprite.
+    O flavor text dos pokemons não está padronizado em inglês.
+# Bugs conhecidos:
+    No Visual Studio Code, o typescript acusa incompatibilidade de tipo na chamada da função handleOpenPokemonPage() no primeiro argumento de .navigate()
+    Não sei se é problema de renderização pelo meu pc estar meio lerdo, mas ao "scrollar" a lista de pokemons muito rápido o aplicativo começa a demorar para renderizar alguns cards e ao voltar, alguns cards do inicio pararam de ser renderizados e precisam ser renderizados de novo.
+# Próximos passos para a evolução do sistema:
+    Implementar componentes com css dinâmico, provavelmente com styled-components.
+    Melhorar o design.
+    Implementar possibilidade de um fazer filtragem a partir de alguns parâmetros como tipo e nome.
+    Incluir mais informações na tela de pokemon, como ataques e linha evolutiva.
+    Implementar a criação de um "team building" que informasse fraquezas do time a partir das fraquezas defensivas e ofensivas.
