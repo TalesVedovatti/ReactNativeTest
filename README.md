@@ -1,9 +1,10 @@
-# React Native Developer Test (Estágio)
+# Pokedex desenvolvida em React Native
 
 # Problema que a aplicação se propõe a resolver:
     Criar uma fonte de acesso a informações de pokemons, tais como nome, aparência e alguma breve descrição de comportamento ou história (chamado de flavor text).
 # Instruções de execução:
     (para o desenvolvimento utilizei o Android Studio, não consegui checar se existe algum erro na versão de IOS)
+    Clone o repositório.
     Para inicializar o projeto, abra 2 terminais na pasta 'MyApp' desse repositório.
     No primeiro terminal, execute 'npm install' para instalar as dependencias do projeto.
     A seguir, ainda nesse terminal, execute o comando 'npx react-native start' e nesse terminal rodará o Metro.
